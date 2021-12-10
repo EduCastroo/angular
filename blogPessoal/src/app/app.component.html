@@ -1,1 +1,3 @@
+<app-menu *ngIf='authService.logado() == true'></app-menu>
 <router-outlet></router-outlet>
+<app-rodape *ngIf='authService.logado() == true'></app-rodape>
